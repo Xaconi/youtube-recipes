@@ -1,4 +1,5 @@
 import logo from './assets/images/logo.svg';
+import Autocomplete from './components/Autocomplete/Autocomplete';
 import VideoPlayer from './components/VideoPlayer/VideoPlayer';
 import { useShorts } from './hooks/useShorts';
 
@@ -11,6 +12,7 @@ function App() {
       <header className="app-header">
         <p className="header">Youtube 📺 Recipe Searcher 🥑</p>
         <img src={logo} className="app-logo" alt="logo" />
+        <Autocomplete></Autocomplete>
         <VideoPlayer videoId={'m-bTLXjSh_Q'}></VideoPlayer>
       </header>
     </div>
