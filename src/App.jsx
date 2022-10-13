@@ -5,7 +5,8 @@ import { useShorts } from './hooks/useShorts';
 
 function App() {
 
-  const {shorts, getShorts } = useShorts('TEST');
+  const {shorts, getShorts } = useShorts();
+  const videoId = getShorts('TEST')
 
   return (
     <div className="app">
@@ -13,7 +14,7 @@ function App() {
         <p className="header">Youtube 📺 Recipe Searcher 🥑</p>
         <img src={logo} className="app-logo" alt="logo" />
         <Autocomplete></Autocomplete>
-        <VideoPlayer videoId={'m-bTLXjSh_Q'}></VideoPlayer>
+        <VideoPlayer videoId={videoId}></VideoPlayer>
       </header>
     </div>
   );

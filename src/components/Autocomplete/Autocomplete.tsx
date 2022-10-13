@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { useAutocomplete } from '../../hooks/useAutocomplete';
 
 const Autocomplete = () => {
@@ -14,4 +14,4 @@ const Autocomplete = () => {
   )
 }
 
-export default Autocomplete;
+export default memo(Autocomplete);
