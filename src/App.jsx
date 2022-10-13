@@ -1,19 +1,13 @@
 import logo from './assets/images/logo.svg';
+import VideoPlayer from './components/VideoPlayer/VideoPlayer';
 
 function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <p className="header">Youtube 📺 Recipe Searcher 🥑</p>
         <img src={logo} className="app-logo" alt="logo" />
-        <p className="header">Vite React Starter 💯</p>
-        <p>
-          Vite + React <br />
-          ESLint + Prettier + Stylelint
-          <br />
-          Sass + Emotion + Tailwind
-          <br />
-          Jest + Testing Library
-        </p>
+        <VideoPlayer videoId={'m-bTLXjSh_Q'}></VideoPlayer>
       </header>
     </div>
   );
