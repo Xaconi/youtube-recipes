@@ -1,7 +1,11 @@
 import logo from './assets/images/logo.svg';
 import VideoPlayer from './components/VideoPlayer/VideoPlayer';
+import { useShorts } from './hooks/useShorts';
 
 function App() {
+
+  const {shorts, getShorts } = useShorts('TEST');
+
   return (
     <div className="app">
       <header className="app-header">
